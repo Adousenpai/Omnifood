@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
