@@ -50,6 +50,13 @@ header {
 .menu a {
   text-decoration: none;
   color: white;
+  transition-delay: 0.2s;
+  padding-bottom: 10px;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #e67e22;
+  
 }
 
 .text_banniere {
@@ -106,7 +113,7 @@ header {
   <!-- =========================================================== --> */
 
 .feature {
-  height: 100vh;
+  
   width: 100%;
   position: relative;
   padding-top: 80px;
@@ -169,3 +176,46 @@ header {
   font-size: 90%;
   line-height: 145%;
 }
+
+/* <!-- =========================================================== -->
+<!-- Deuxieme Section -->
+<!-- =========================================================== --> */
+
+.container_img {
+  width: 100%;
+  padding: 80px 0 0 0;
+  margin: 0;
+  
+}
+
+.ul_img { 
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  
+  
+}
+
+.ul_img li {
+  overflow: hidden;
+}
+
+.ul_img img {
+    width: 100%;
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1.15);
+    
+  }
+
+.ul_img img:hover {
+  opacity: 1;
+  transform: none;
+  
+  
+}
+
