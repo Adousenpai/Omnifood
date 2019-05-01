@@ -7,6 +7,7 @@ body {
   font-weight: 300;
   font-size: 20px;
   color: #555;
+  scroll-behavior: smooth;
 }
 
 /* =========================== */
@@ -56,7 +57,6 @@ header {
 
 .menu a:hover {
   border-bottom: 2px solid #e67e22;
-  
 }
 
 .text_banniere {
@@ -112,8 +112,7 @@ header {
                         <!-- Premiere Section -->
   <!-- =========================================================== --> */
 
-.feature {
-  
+#feature {
   width: 100%;
   position: relative;
   padding-top: 80px;
@@ -153,13 +152,11 @@ header {
   justify-content: space-between;
 }
 
-
-
-.card, .card1 {
+.card,
+.card1 {
   padding: 5px;
   width: 250px;
   margin-bottom: 10px;
-  
 }
 
 .card1 {
@@ -185,10 +182,9 @@ header {
   width: 100%;
   padding: 80px 0 0 0;
   margin: 0;
-  
 }
 
-.ul_img { 
+.ul_img {
   width: 100%;
   list-style-type: none;
   display: flex;
@@ -196,8 +192,6 @@ header {
   padding: 0;
   margin: 0;
   background-color: black;
-  
-  
 }
 
 .ul_img li {
@@ -205,17 +199,76 @@ header {
 }
 
 .ul_img img {
-    width: 100%;
-    opacity: 0.7;
-    transition: transform 0.5s, opacity 0.5s;
-    transform: scale(1.15);
-    
-  }
+  width: 100%;
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(1.15);
+}
 
 .ul_img img:hover {
   opacity: 1;
   transform: none;
+}
+
+/* <!-- =========================================================== -->
+                        <!-- Troisieme Section -->
+ <!-- =========================================================== --> */
+
+#Work{
+  background-color: #f4f4f4;
+}
+
+.work {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 30px;
   
+ 
   
+}
+
+.work h2{
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.work img{
+  width: 40%;
+  margin-right: 50px;
+}
+
+.tel {
+  display: flex;
+  justify-content: center;
+  padding-left: 27%;
+  padding-top: 15px;
+  
+}
+
+.number {
+  color: #e67e22;
+  
+  text-align: center;
+  padding: 10px;
+  
+  margin-right: 25px;
+  font-size: 150%;
+  
+}
+
+.tel ul {
+  list-style-type: none;
+}
+
+.tel li {
+  list-style-type: none;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+#google {
+  width: 70%;
+
 }
 
