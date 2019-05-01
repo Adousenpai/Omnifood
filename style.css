@@ -1,11 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", "Arial";
+  box-sizing: border-box;
+  background-color: white;
+  font-weight: 300;
+  font-size: 20px;
+  color: #555;
 }
 
+/* =========================== */
+/* HEADER */
+/* =========================== */
+
 header {
-  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(image/hero-min.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -14,29 +24,83 @@ header {
 }
 
 .menu {
-  border: 3px solid black;
+  
   display: flex;
-  justify-content: space-around;
-  width: 100%
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
 }
 
 .menu ul {
-  border: solid 6px black;
+  
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   width: 50%;
   list-style-type: none;
-  
+  align-self: center;
+  position: absolute;
+  left: 45%;
 }
 
 .logo {
-  height: 100vh;
-  border: 4px solid black;
+  height: 100px;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.text_banniere {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text_banniere h1 {
+  color: white;
+  font-size: 240%;
+}
+
+.text_banniere .button_a {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  margin-right: 15px;
+  border-radius: 200px;
+  padding: 10px 30px;
+  color: white;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 300;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.text_banniere .button_b {
+  background-color: transparent;
+  border: 1px solid #e67e22;
+  margin-right: 15px;
+  border-radius: 200px;
+  padding: 10px 30px;
+  color: #e67e22;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 300;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 
 }
 
-a {
-  text-decoration: none;
+.text_banniere .button_a:hover {
+  background-color: #cc670e;
+  border: 1px solid #cc670e;
+}
+
+.text_banniere .button_b:hover {
+  background-color: #e67e22;
   color: white;
 }
